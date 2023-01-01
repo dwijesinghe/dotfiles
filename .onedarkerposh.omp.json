@@ -1,0 +1,68 @@
+{
+    "$schema": "https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json",
+    "version": 2,
+    "console_title_template": "{{ .Folder }}",
+    "blocks": [
+        {
+            "type": "prompt",
+            "alignment": "left",
+            "segments": [
+                {
+                    "type": "command",
+                    "foreground": "#56b6c2",
+                    "foreground": "#c678dd",
+                    "properties": {
+                        "shell": "zsh",
+                        "command": "echo $(yes '_' | head -n$(($(tput cols)-5)) | tr -d '\n')"
+                    }
+                }
+            ],
+            "newline": false,
+            "overflow": "hide"
+        },
+        {
+            "type": "newline",
+            "background": "#c678dd"
+        },
+        {
+            "type": "prompt",
+            "alignment": "left",
+            "segments": [
+                {
+                    "type": "command",
+                    "foreground": "#61afef",
+                    "properties": {
+                        "shell": "zsh",
+                        "command": "echo $(echo $(dirs) | sed -r 's/[/]/ ❯  /g')"
+                    }
+                },
+                {
+                    "type": "git",
+                    "style": "powerline",
+                    "foreground": "#c678dd",
+                    "template": "{{ .HEAD }} ",
+                    "properties": {
+                        "branch_icon": "\ue725 "
+                    }
+                },
+                {
+                    "type": "python",
+                    "style": "plain",
+                    "powerline_symbol": "\uE0B0",
+                    "foreground": "#100e23",
+                    "background": "#906cff",
+                    "background": "#c678dd",
+                    "template": " \uE235 {{ .Venv }} "
+                },
+                {
+                    "type": "text",
+                    "style": "plain",
+                    "foreground": "#c678dd",
+                    "template": ": "
+                }
+            ],
+            "newline": true,
+            "overflow": "break"
+        }
+    ]
+}

@@ -8,10 +8,11 @@ set mouse=v                 " middle-click paste with
 set hlsearch                " highlight search 
 set incsearch               " incremental search
 set tabstop=4               " number of columns occupied by a tab 
-set softtabstop=4           " see multiple spaces as tabstops so <BS> does the right thing
-set expandtab               " converts tabs to white space
+set noexpandtab
 set shiftwidth=4            " width for autoindents
 set autoindent              " indent a new line the same amount as the line just typed
+set softtabstop=4           " see multiple spaces as tabstops so <BS> does the right thing
+set expandtab               " converts tabs to white space
 set number                  " add line numbers
 set wildmode=longest,list   " get bash-like tab completions
 filetype plugin indent on   "allow auto-indenting depending on file type
@@ -44,6 +45,7 @@ nnoremap <leader>fg <cmd>Telescope live_grep<cr>
 nnoremap <leader>sv :source ~/.config/nvim/init.vim<CR> nnoremap <leader>m :MaximizerToggle<CR>
 nnoremap <leader>l :set wrap!<CR>
 nnoremap <leader>/ :noh<CR>
+nnoremap <leader>cca :%bd\|e#\|bd# <CR>
 
 " Plugin Section powered by vimplug
 call plug#begin('~/.vim/plugged')
@@ -62,6 +64,7 @@ call plug#begin('~/.vim/plugged')
     Plug 'NTBBloodbath/doom-one.nvim'
     Plug 'projekt0n/github-nvim-theme'
     Plug 'lunarvim/Onedarker.nvim'
+    Plug 'arcticicestudio/nord-vim'
     " Plug 'kyazdani42/nvim-web-devicons'
     "Utilities
     Plug 'SirVer/ultisnips'
@@ -146,39 +149,39 @@ let g:startify_custom_header = startify#center([
             \ ' |  \_| |______ |_____|   \/   __|__ |  |  | ',
             \ ])
 
-let g:startify_custom_header = startify#center([
-            \ '                                                     ', 
-            \ '        🟩                                  🟩        ', 
-            \ '      🟩🟩🟩                                🟩🟩      ', 
-            \ '    🟩🟩🟩🟩🟩                              🟩🟩🟩    ', 
-            \ '  🟩🟩🟩🟩🟩🟩🟩                            🟩🟩🟩🟩  ', 
-            \ '🟦🟦🟩🟩🟩🟩🟩🟩🟩                          🟩🟩🟩🟩🟩', 
-            \ '🟦🟦🟦🟩🟩🟩🟩🟩🟩🟩                        🟩🟩🟩🟩🟩', 
-            \ '🟦🟦🟦🟦🟩🟩🟩🟩🟩🟩🟩                      🟩🟩🟩🟩🟩', 
-            \ '🟦🟦🟦🟦🟦🟩🟩🟩🟩🟩🟩🟩                    🟩🟩🟩🟩🟩', 
-            \ '🟦🟦🟦🟦🟦  🟩🟩🟩🟩🟩🟩🟩                  🟩🟩🟩🟩🟩', 
-            \ '🟦🟦🟦🟦🟦    🟩🟩🟩🟩🟩🟩🟩                🟩🟩🟩🟩🟩', 
-            \ '🟦🟦🟦🟦🟦      🟩🟩🟩🟩🟩🟩🟩              🟩🟩🟩🟩🟩',  
-            \ '🟦🟦🟦🟦🟦        🟩🟩🟩🟩🟩🟩🟩            🟩🟩🟩🟩🟩', 
-            \ '🟦🟦🟦🟦🟦          🟩🟩🟩🟩🟩🟩🟩          🟩🟩🟩🟩🟩', 
-            \ '🟦🟦🟦🟦🟦            🟩🟩🟩🟩🟩🟩🟩        🟩🟩🟩🟩🟩', 
-            \ '🟦🟦🟦🟦🟦              🟩🟩🟩🟩🟩🟩🟩      🟩🟩🟩🟩🟩', 
-            \ '🟦🟦🟦🟦🟦                🟩🟩🟩🟩🟩🟩🟩    🟩🟩🟩🟩🟩', 
-            \ '🟦🟦🟦🟦🟦                  🟩🟩🟩🟩🟩🟩🟩  🟩🟩🟩🟩🟩', 
-            \ '🟦🟦🟦🟦🟦                    🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩', 
-            \ '🟦🟦🟦🟦🟦                      🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩', 
-            \ '🟦🟦🟦🟦🟦                        🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩', 
-            \ '🟦🟦🟦🟦🟦                          🟩🟩🟩🟩🟩🟩🟩🟩🟩', 
-            \ '  🟦🟦🟦🟦                            🟩🟩🟩🟩🟩🟩🟩  ',   
-            \ '    🟦🟦🟦                              🟩🟩🟩🟩🟩    ', 
-            \ '      🟦🟦                                🟩🟩🟩      ', 
-            \ '        🟦                                  🟩        ', 
-            \ '                                                      ', 
-            \ '                                                      ', 
-            \ '       __   _ _______  _____  _    _ _____ _______    ',
-            \ '       | \  | |______ |     |  \  /    |   |  |  |    ',
-            \ '       |  \_| |______ |_____|   \/   __|__ |  |  |    ',
-            \ ])
+" let g:startify_custom_header = startify#center([
+"             \ '                                                     ', 
+"             \ '        🟩                                  🟩        ', 
+"             \ '      🟩🟩🟩                                🟩🟩      ', 
+"             \ '    🟩🟩🟩🟩🟩                              🟩🟩🟩    ', 
+"             \ '  🟩🟩🟩🟩🟩🟩🟩                            🟩🟩🟩🟩  ', 
+"             \ '🟦🟦🟩🟩🟩🟩🟩🟩🟩                          🟩🟩🟩🟩🟩', 
+"             \ '🟦🟦🟦🟩🟩🟩🟩🟩🟩🟩                        🟩🟩🟩🟩🟩', 
+"             \ '🟦🟦🟦🟦🟩🟩🟩🟩🟩🟩🟩                      🟩🟩🟩🟩🟩', 
+"             \ '🟦🟦🟦🟦🟦🟩🟩🟩🟩🟩🟩🟩                    🟩🟩🟩🟩🟩', 
+"             \ '🟦🟦🟦🟦🟦  🟩🟩🟩🟩🟩🟩🟩                  🟩🟩🟩🟩🟩', 
+"             \ '🟦🟦🟦🟦🟦    🟩🟩🟩🟩🟩🟩🟩                🟩🟩🟩🟩🟩', 
+"             \ '🟦🟦🟦🟦🟦      🟩🟩🟩🟩🟩🟩🟩              🟩🟩🟩🟩🟩',  
+"             \ '🟦🟦🟦🟦🟦        🟩🟩🟩🟩🟩🟩🟩            🟩🟩🟩🟩🟩', 
+"             \ '🟦🟦🟦🟦🟦          🟩🟩🟩🟩🟩🟩🟩          🟩🟩🟩🟩🟩', 
+"             \ '🟦🟦🟦🟦🟦            🟩🟩🟩🟩🟩🟩🟩        🟩🟩🟩🟩🟩', 
+"             \ '🟦🟦🟦🟦🟦              🟩🟩🟩🟩🟩🟩🟩      🟩🟩🟩🟩🟩', 
+"             \ '🟦🟦🟦🟦🟦                🟩🟩🟩🟩🟩🟩🟩    🟩🟩🟩🟩🟩', 
+"             \ '🟦🟦🟦🟦🟦                  🟩🟩🟩🟩🟩🟩🟩  🟩🟩🟩🟩🟩', 
+"             \ '🟦🟦🟦🟦🟦                    🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩', 
+"             \ '🟦🟦🟦🟦🟦                      🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩', 
+"             \ '🟦🟦🟦🟦🟦                        🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩', 
+"             \ '🟦🟦🟦🟦🟦                          🟩🟩🟩🟩🟩🟩🟩🟩🟩', 
+"             \ '  🟦🟦🟦🟦                            🟩🟩🟩🟩🟩🟩🟩  ',   
+"             \ '    🟦🟦🟦                              🟩🟩🟩🟩🟩    ', 
+"             \ '      🟦🟦                                🟩🟩🟩      ', 
+"             \ '        🟦                                  🟩        ', 
+"             \ '                                                      ', 
+"             \ '                                                      ', 
+"             \ '       __   _ _______  _____  _    _ _____ _______    ',
+"             \ '       | \  | |______ |     |  \  /    |   |  |  |    ',
+"             \ '       |  \_| |______ |_____|   \/   __|__ |  |  |    ',
+"             \ ])
 let g:startify_lists = [
             \ { 'type': 'files', 'header': startify#center(['Recent Files'])},
             \ ]
