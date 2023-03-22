@@ -1,14 +1,3 @@
-require("lspconfig").sumneko_lua.setup({
-	-- ... other configs
-	settings = {
-		Lua = {
-			diagnostics = {
-				globals = { "vim" },
-			},
-		},
-	},
-})
-
 vim.g.loaded_netrw = 1
 vim.g.loaded_netrwPlugin = 1
 
@@ -134,12 +123,6 @@ for type, icon in pairs(signs) do
 	vim.fn.sign_define(hl, { text = icon, texthl = hl, numhl = "" })
 end
 
-require("lspconfig")["sumneko_lua"].setup({
-	capabilities = capabilities,
-	on_attach = on_attach,
-	flags = lsp_flags,
-})
-
 require("lspconfig")["pyright"].setup({
 	capabilities = capabilities,
 	on_attach = on_attach,
@@ -159,21 +142,6 @@ vim.keymap.set("n", "<space>e", vim.diagnostic.open_float, opts)
 vim.keymap.set("n", "[d", vim.diagnostic.goto_prev, opts)
 vim.keymap.set("n", "]d", vim.diagnostic.goto_next, opts)
 vim.keymap.set("n", "<space>q", vim.diagnostic.setloclist, opts)
-
-local saga = require("lspsaga")
-
-saga.init_lsp_saga({
-	-- keybinds for navigation in lspsaga window
-	move_in_saga = { prev = "<C-k>", next = "<C-j>" },
-	-- use enter to open file with finder
-	finder_action_keys = {
-		open = "<CR>",
-	},
-	-- use enter to open file with definition preview
-	definition_action_keys = {
-		edit = "<CR>",
-	},
-})
 
 -- disable virtual_text (inline) diagnostics and use floating window
 -- format the message such that it shows source, message and
@@ -258,7 +226,6 @@ require("mason-lspconfig").setup({
 		"html",
 		"cssls",
 		"tailwindcss",
-		"sumneko_lua",
 		"emmet_ls",
 	},
 	-- auto-install configured servers (with lspconfig)
@@ -345,7 +312,7 @@ require("nvim-treesitter.configs").setup({
 	},
 	-- enable indentation
 	indent = { enable = true },
-	-- enable autotagging (w/ nvim-ts-autotag plugin)
+	-- enable autotagging (w/   }nvim-ts-autotag plugin)
 	autotag = { enable = true },
 	-- ensure these language parsers are installed
 	ensure_installed = {
@@ -369,6 +336,52 @@ require("nvim-treesitter.configs").setup({
 	-- auto install above language parsers
 	auto_install = true,
 })
+
+local alpha = require("alpha")
+local alpha_theme = require("alpha.themes.theta")
+require("alpha.term")
+
+local alpha_header = {
+	type = "terminal",
+	command = "cat | ascii-image-converter --color " .. os.getenv("HOME") .. "/Code/neovim_logo_cropped.png -W 40",
+	width = 40,
+	height = 24,
+	opts = {
+		position = "center",
+		redraw = true,
+		window_config = {},
+	},
+}
+
+alpha_config = alpha_theme.config
+alpha_config.layout[2] = alpha_header
+alpha_config.layout[3] = {
+	type = "text",
+	val = {
+		[[]],
+		[[]],
+		[[]],
+		[[                                             o8o]],
+		[[                                             `"']],
+		[[ooo. .oo.    .ooooo.   .ooooo.  oooo    ooo oooo  ooo. .oo.  .oo.]],
+		[[`888P"Y88b  d88' `88b d88' `88b  `88.  .8'  `888  `888P"Y88bP"Y88b]],
+		[[ 888   888  888ooo888 888   888   `88..8'    888   888   888   888]],
+		[[ 888   888  888    .o 888   888    `888'     888   888   888   888]],
+		[[o888o o888o `Y8bod8P' `Y8bod8P'     `8'     o888o o888o o888o o888o]],
+		[[]],
+		[[]],
+		[[]],
+		[[]],
+	},
+	opts = {
+		hl = "SpecialComment",
+		position = "center",
+	},
+}
+alpha_config.layout[6] = { type = "padding", val = 2 }
+
+-- alpha.setup(new_alpha_config)
+alpha.setup(alpha_config)
 
 vim.notify = require("notify")
 vim.opt.clipboard:append("unnamedplus")
