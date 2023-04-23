@@ -78,5 +78,13 @@ return require('packer').startup(function(use)
   use ('johmsalas/text-case.nvim')
 
   use 'lukas-reineke/lsp-format.nvim'
+
+  use {
+      'nvim-lualine/lualine.nvim',
+      requires = { 'nvim-tree/nvim-web-devicons', opt = true }
+  }
+
+  use 'jose-elias-alvarez/null-ls.nvim'
+  use 'jay-babu/mason-null-ls.nvim'
 end)
 
