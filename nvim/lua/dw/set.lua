@@ -15,4 +15,6 @@ vim.opt.termguicolors = true
 
 vim.opt.linebreak = true
 
-vim.cmd 'colorscheme onedarker'
+vim.cmd("colorscheme onedarker")
+
+vim.api.nvim_set_option("clipboard", "unnamed")
