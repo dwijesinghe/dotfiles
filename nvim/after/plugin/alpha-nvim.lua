@@ -14,8 +14,20 @@ local alpha_header = {
 	},
 }
 
+local alpha_header_img = {
+	type = "terminal",
+	command = "cat | chafa ~/Code/neovim_stack.png --size 50x40",
+	width = 50,
+	height = 40,
+	opts = {
+		position = "center",
+		redraw = true,
+		window_config = {},
+	},
+}
+
 alpha_config = alpha_theme.config
-alpha_config.layout[2] = alpha_header
+alpha_config.layout[2] = alpha_header_img
 alpha_config.layout[3] = {
 	type = "text",
 	val = {
@@ -25,10 +37,7 @@ alpha_config.layout[3] = {
 		[[]],
 		[[]],
 		[[]],
-	},
-	opts = {
-		hl = "SpecialComment",
-		position = "center",
+		[[]],
 	},
 }
 alpha_config.layout[6] = { type = "padding", val = 2 }
