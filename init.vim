@@ -92,7 +92,7 @@ call plug#begin('~/.vim/plugged')
     Plug 'glepnir/zephyr-nvim'
     Plug 'marko-cerovac/material.nvim'
     Plug 'navarasu/onedark.nvim'
-    " Plug 'olimorris/onedarkpro.nvim'
+    Plug 'olimorris/onedarkpro.nvim'
     " Plug 'lukas-reineke/onedark.nvim'
     Plug 'folke/tokyonight.nvim'
     Plug 'ryanoasis/vim-devicons'
@@ -123,7 +123,7 @@ call plug#begin('~/.vim/plugged')
     Plug 'williamboman/mason.nvim'
     Plug 'williamboman/mason-lspconfig.nvim'
     Plug 'neovim/nvim-lspconfig'
-    Plug 'glepnir/lspsaga.nvim', { 'branch': 'main' }
+    " Plug 'glepnir/lspsaga.nvim', { 'branch': 'main' }
     Plug 'onsails/lspkind.nvim' 
     " Autocompletion
     Plug 'hrsh7th/cmp-nvim-lsp'
@@ -160,6 +160,8 @@ call plug#begin('~/.vim/plugged')
     " Songwriting
     Plug 'dwijesinghe/viMusic'
     Plug 'm00qek/baleia.nvim', { 'tag': 'v1.2.0' }
+    " Copilot
+    " Plug 'github/copilot.vim'
 call plug#end()
 
 " Colorscheme Config

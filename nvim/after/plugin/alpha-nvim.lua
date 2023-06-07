@@ -4,11 +4,11 @@ require("alpha.term")
 
 local alpha_header = {
 	type = "terminal",
-	command = "cat | ascii-image-converter --color " .. os.getenv("HOME") .. "/Code/neovim_logo_cropped.png -W 40",
+	command = "cat | ascii-image-converter --color " .. os.getenv("HOME") .. "/Code/neovim_logo_cropped.png -d 40,24",
 	width = 40,
-	height = 24,
+	height = 25,
 	opts = {
-		position = "center",
+		position = "left",
 		redraw = true,
 		window_config = {},
 	},
@@ -34,9 +34,6 @@ alpha_config.layout[3] = {
 		position = "center",
 	},
 	val = {
-		[[]],
-		[[]],
-		[[                                                                                          ]],
 		[[                                                             ...                          ]],
 		[[                                                            .:::.                         ]],
 		[[                                                                                          ]],
@@ -49,9 +46,6 @@ alpha_config.layout[3] = {
 		[[::         :.   :.            .:         :.     .:::::      .:::.  ::::     .:::      :::.]],
 		[[.:         :.    ..........     .... ....        .:::.      .:::   ::::     .:::      :::.]],
 		[[                                                                                          ]],
-		[[]],
-		[[]],
-		[[]],
 		[[]],
 	},
 }
