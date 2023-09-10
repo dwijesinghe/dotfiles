@@ -100,8 +100,8 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 setopt PROMPT_SUBST
-# PROMPT=">"
 # PROMPT='$(echo ${$(pwd)//\// %F{magenta} %f })'
 PROMPT='${${$(pwd)//\/Users\/dimitri/  }//\//   }'
-# PROMPT='$($PROMPT//\//   )'
 PROMPT="%F{magenta}$PROMPT%f %F{cyan}󰟀 %f"
+path+=('/Users/dimitri/.emacs.d/bin')
+export PATH
