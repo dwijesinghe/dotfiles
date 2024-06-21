@@ -1,5 +1,2 @@
-brew install tmux
-ln -s ~/Code/dotfiles/.tmux.conf ~/.tmux.conf
-ln -s ~/Code/dotfiles/init.vim ~/.config/nvim/init.vim
-git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
-
+ln -s ~/Code/dotfiles/lua/chadrc.lua ~/.config/nvim/lua/chadrc.lua
+ln -s ~/Code/dotfiles/lua/highlights.lua ~/.config/nvim/lua/highlights.lua
