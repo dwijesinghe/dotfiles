@@ -82,33 +82,33 @@ return {
         -- config
         config = {
           header = {
-            "                                             ",
-            "                                             ",
-            "          💹🔫                ️🔫             ",
-            "         🈯️🈯️🈯️🌴              💹🍀          ",
-            "       💹💹💹🤢🍀              🐍🈯️🈯️🔫      ",
-            "  🎣🧩🈯️🈯️🈯️💹🈯️🔫             ⛳️💹🥎💹🔫    ",
-            "  🎽🥶💹🥗🈯️🐲💹💹🌴             🈯️📒🈯️💹🍀️  ",
-            "  ️🚹️🛃🎽💹💹🤢🈯️💚🍀           ️💹🤢💹🤮🈯️🌴  ",
-            "🛂🛅🚹️🈯️🈯️💹🐲💹🈯️🔫          ️💚🈯️💹🤢🦎💹🦎 ",
-            "🎽️️🚹️🛃🛂🎽💹💚📗🤢💹🐲          💹💹🐲🈯️💹🦎 ",
-            "🎽️🛂🚹️♿️🛃🌌🈯️💹💚🍀🈯️💚         ️🈯️🤢💚💹💚🌴",
-            "🎽️🛃🎽🛂🚹️🎽🍏🐲🈯️💹🤢💹🥦      💹🈯️🈯️🟢🈯️🦎 ",
-            "🎽️🚹️🛅🛃🔵🛂 💚🍀🐲💚🍀📗🦎    ️💚🐲💹🤢💹💹  ",
-            "🎽🛂♿️🈳🛅🛃   🔰💹📗🤢🈯️🍏🍀   🈯️📗🍀🈯️🐲🌴 ",
-            "🎽🚹️🎽🔵🚹️🎽     ️🍏💚💹💚🐲💹🥦 ️💹💚💹💚💹🦎 ",
-            "🎽🎽️🔵🛂🛃🔵     🍀📗🍀🟢💚🍀🌿🐲🍀🟢🐲🍀🍀  ",
-            "🎽🎽🚹️🔵🛂🚹️️       🥬💚🐲💹📗🟢💚📗💚💹🟢💚  ",
-            "🎽🔵💙🎽🔵🎽          🍏🍀💚🍀🐲💹🈯️🟢🍀📗🦎 ",
-            "🎽💙🎽🛂🎽🎽          🥬💚📗🥬🟢🈯️💹🍀💚🟢🌴 ",
-            "🎽🔵🚹️🔵💙🔵             🍀🟢💚🍀💹🟢📗💚🥬  ",
-            "🎽🎽💙🎽🚹️🔵              💚🥬🐲💚🈯️💹🍀🪀   ",
-            "  🎽🎽🔵🔵💙               🦠💚🟢💹🟢💚🥬    ",
-            "      ️🧿🔵💙                 🍀💚🈯️🍀🥬      ",
-            "        ️🎽🧿                  🐍�💚🟢💚      ",
-            "          🎽                     🥬🍀        ",
-            "                                             ",
-            "                                             ",
+            "                                            ",
+            "                                            ",
+            "          💹🔫                ️ 🔫           ",
+            "         🈯️🈯️🈯️🌴              💹🍀         ",
+            "       💹💹💹🤢🍀              🐍🈯️🈯️🔫     ",
+            "  🎣🧩🈯️🈯️🈯️💹🈯️🔫             🦎💹🥎💹🔫   ",
+            "  🎽🥶💹💹🈯️🐲💹💹🌴           🦎🈯️📒🈯️💹🍀️ ",
+            "  ️🚹️🛃🎽💹💹🤢🈯️💚🍀           ️ 💹🤢💹🤮🈯️🌴",
+            "🛂🛅🚹️🈯️🈯️💹🐲💹🈯️🔫          ️  🈯️💹🤢🦎💹🦎",
+            "🎽️️🚹️🛃🛂🎽💹💚📗🤢💹🐲          💹💹🐲🈯️💹🦎",
+            "🎽️🛂🚹️♿️🛃🎽🈯️💹💚🍀🈯️💚        ️🈯️🤢💚💹💚🌴",
+            "🎽️🛃🎽🛂🚹️🎽🍏🐲🈯️💹🤢💹🥦      💹🈯️🈯️🟢🈯️🦎",
+            "🎽️🚹️🛅🛃🔵🛂 💚🍀🐲💚🍀📗🦎    ️ 💚🐲💹🤢💹🌴",
+            "🎽🛂♿️🈳🛅🛃   🔰💹📗🤢🈯️🍏🍀   🈯️📗🍀🈯️🐲🌴",
+            "🎽🚹️🎽🔵🚹️🎽     ️🍏💚💹💚🐲💹🥦 ️💹💚💹💚💹🦎",
+            "🎽🎽️🔵🛂🛃🔵     🍀📗🍀🟢💚🍀🌿🐲🍀🟢🐲🍀🍀 ",
+            "🎽🎽🚹️🔵🛂🚹️️       🥬💚🐲💹📗🟢💚📗💚💹🟢💚 ",
+            "🎽🔵💙🎽🔵🎽          🍏🍀💚🍀🐲💹🈯️🟢🍀📗🦎",
+            "🎽💙🎽🛂🎽🎽          🥬💚📗🥬🟢🈯️💹🍀💚🟢🌴",
+            "🎽🔵🚹️🔵💙🔵             🍀🟢💚🍀💹🟢📗💚🥬 ",
+            "🎽🎽💙🎽🚹️🔵              💚🥬🐲💚🈯️💹🍀🪀  ",
+            "  🎽🎽🔵🔵💙               🦠💚🟢💹🟢💚🥬   ",
+            "      ️🧿🔵💙                 🍀💚🈯️🍀🥬     ",
+            "        ️🎽🧿                  🐍�💚🟢💚     ",
+            "          🎽                     🥬🍀       ",
+            "                                            ",
+            "                                            ",
           },
           packages = {
             enable = false,
@@ -125,132 +125,8 @@ return {
       dependencies = "nvim-tree/nvim-web-devicons",
       config = function()
         local colors = require("base46").get_theme_tb "base_30"
-        -- Apply Base46 colors to bufferline highlights
-        vim.api.nvim_set_hl(0, "BufferLineBackground", {
-          fg = colors.light_grey,
-          bg = colors.black2,
-        })
-
-        vim.api.nvim_set_hl(0, "BufferlineIndicatorVisible", {
-          fg = colors.black2,
-          bg = colors.black2,
-        })
-
-        -- buffers
-        vim.api.nvim_set_hl(0, "BufferLineBufferSelected", {
-          fg = colors.white,
-          bg = colors.black,
-        })
-
-        vim.api.nvim_set_hl(0, "BufferLineBufferVisible", {
-          fg = colors.light_grey,
-          bg = colors.black2,
-        })
-
-        -- for diagnostics = "nvim_lsp"
-        vim.api.nvim_set_hl(0, "BufferLineError", {
-          fg = colors.light_grey,
-          bg = colors.black2,
-        })
-        vim.api.nvim_set_hl(0, "BufferLineErrorDiagnostic", {
-          fg = colors.light_grey,
-          bg = colors.black2,
-        })
-
-        -- close buttons
-        vim.api.nvim_set_hl(0, "BufferLineCloseButton", {
-          fg = colors.light_grey,
-          bg = colors.black2,
-        })
-        vim.api.nvim_set_hl(0, "BufferLineCloseButtonVisible", {
-          fg = colors.light_grey,
-          bg = colors.black2,
-        })
-        vim.api.nvim_set_hl(0, "BufferLineCloseButtonSelected", {
-          fg = colors.red,
-          bg = colors.black,
-        })
-        vim.api.nvim_set_hl(0, "BufferLineFill", {
-          fg = colors.grey_fg,
-          bg = colors.black2,
-        })
-        vim.api.nvim_set_hl(0, "BufferlineIndicatorSelected", {
-          fg = colors.black,
-          bg = colors.black,
-        })
-
-        -- modified
-        vim.api.nvim_set_hl(0, "BufferLineModified", {
-          fg = colors.red,
-          bg = colors.black2,
-        })
-        vim.api.nvim_set_hl(0, "BufferLineModifiedVisible", {
-          fg = colors.red,
-          bg = colors.black2,
-        })
-        vim.api.nvim_set_hl(0, "BufferLineModifiedSelected", {
-          fg = colors.green,
-          bg = colors.black,
-        })
-
-        -- separators
-        vim.api.nvim_set_hl(0, "BufferLineSeparator", {
-          fg = colors.black2,
-          bg = colors.black2,
-        })
-        vim.api.nvim_set_hl(0, "BufferLineSeparatorVisible", {
-          fg = colors.black2,
-          bg = colors.black2,
-        })
-        vim.api.nvim_set_hl(0, "BufferLineSeparatorSelected", {
-          fg = colors.black2,
-          bg = colors.black2,
-        })
-
-        -- tabs
-        vim.api.nvim_set_hl(0, "BufferLineTab", {
-          fg = colors.light_grey,
-          bg = colors.one_bg3,
-        })
-        vim.api.nvim_set_hl(0, "BufferLineTabSelected", {
-          fg = colors.black2,
-          bg = colors.nord_blue,
-        })
-        vim.api.nvim_set_hl(0, "BufferLineTabClose", {
-          fg = colors.red,
-          bg = colors.black,
-        })
-
-        vim.api.nvim_set_hl(0, "BufferLineDevIconDefaultSelected", {
-          bg = "none",
-        })
-
-        vim.api.nvim_set_hl(0, "BufferLineDevIconDefaultInactive", {
-          bg = "none",
-        })
-        vim.api.nvim_set_hl(0, "BufferLineDuplicate", {
-          fg = "NONE",
-          bg = colors.black2,
-        })
-        vim.api.nvim_set_hl(0, "BufferLineDuplicateSelected", {
-          fg = colors.red,
-          bg = colors.black,
-        })
-        vim.api.nvim_set_hl(0, "BufferLineDuplicateVisible", {
-          fg = colors.blue,
-          bg = colors.black2,
-        })
-
-        -- custom area
-        vim.api.nvim_set_hl(0, "BufferLineRightCustomAreaText1", {
-          fg = colors.white,
-        })
-
-        vim.api.nvim_set_hl(0, "BufferLineRightCustomAreaText2", {
-          fg = colors.red,
-        })
-
         require("bufferline").setup {
+
           options = {
             mode = "buffers", -- Show buffers instead of tabs
             numbers = "none",
@@ -266,11 +142,28 @@ return {
             offsets = {
               {
                 filetype = "NvimTree",
-                text = "File Explorer",
+                text = function()
+                  return vim.fn.getcwd()
+                end,
+                highlight = "Dashboard",
                 text_align = "left",
-                separator = true,
+                separator = false,
               },
             },
+          },
+          highlights = {
+            fill = { bg = colors.black2, fg = colors.white },
+            background = { fg = colors.light_grey, bg = colors.black2 },
+            buffer_selected = { fg = colors.blue, bg = colors.black, bold = true },
+            separator = { fg = colors.black2, bg = colors.black2 },
+            separator_selected = { fg = colors.black2, bg = colors.black },
+            buffer_visible = { fg = colors.white, bg = colors.black },
+            close_button = { fg = colors.light_grey, bg = colors.black2 },
+            close_button_selected = { fg = colors.white, bg = colors.black },
+            close_button_visible = { fg = colors.light_grey, bg = colors.black2 },
+            modified = { fg = colors.black, bg = colors.black2 },
+            modified_selected = { fg = colors.black, bg = colors.black2 },
+            modified_visible = { fg = colors.blue, bg = colors.blue },
           },
         }
       end,
